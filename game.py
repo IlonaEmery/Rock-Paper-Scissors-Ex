@@ -1,3 +1,4 @@
+import random
 
 
 
@@ -10,17 +11,21 @@
 
 
 # ASK FOR USER INPUT
-U = INPUT(Please choose one of: "Rock, Paper, Scissors?")
+u = input("Please choose one of: Rock, Paper, Scissors?")
 
 print("user chose:",u)
 
 # VALIDATIONS
-
-
+options = ["rock", "paper", "scissors"]
+if u not in options :
+    print ("Please choose between rock, paper or scissors")
+    exit ()
+    
 # COMPUTER CHOICE
-
-
+computer_choice = random.choice(options)
+print("computer_choice: ", computer_choice)
 
 # DETERMINE THE WINNER
+
 
 # FINAL RESULT
